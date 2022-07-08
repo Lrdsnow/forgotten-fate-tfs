@@ -1,0 +1,2 @@
+# ForgottenFateMods
+Modding Guide/Template
