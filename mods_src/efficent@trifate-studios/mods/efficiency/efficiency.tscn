@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3ujulh136u2i"]
+
+[ext_resource type="Script" path="res://mods/efficiency/efficiency.gd" id="1_lkjt6"]
+
+[node name="efficiency" type="Node"]
+script = ExtResource("1_lkjt6")

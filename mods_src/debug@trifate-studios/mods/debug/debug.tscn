@@ -1,0 +1,187 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvtm2y4q5kpn4"]
+
+[ext_resource type="Script" path="res://mods/debug/debug.gd" id="1_pwqp5"]
+
+[sub_resource type="Animation" id="Animation_oniow"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("debug_layer/debug_panel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-415, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_a4c61"]
+resource_name = "open"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("debug_layer/debug_panel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-415, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q66n7"]
+_data = {
+"RESET": SubResource("Animation_oniow"),
+"open": SubResource("Animation_a4c61")
+}
+
+[node name="debug" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="debug_layer" type="CanvasLayer" parent="."]
+layer = 50
+script = ExtResource("1_pwqp5")
+
+[node name="debug_panel" type="Panel" parent="debug_layer"]
+offset_left = -415.0
+offset_bottom = 1439.0
+
+[node name="vbox" type="VBoxContainer" parent="debug_layer/debug_panel"]
+offset_left = 24.0
+offset_right = 397.0
+offset_bottom = 1442.0
+alignment = 1
+
+[node name="bools" type="Label" parent="debug_layer/debug_panel/vbox"]
+visible = false
+offset_top = 708.0
+offset_right = 373.0
+offset_bottom = 734.0
+text = "Bools:"
+horizontal_alignment = 1
+
+[node name="truefate" type="CheckBox" parent="debug_layer/debug_panel/vbox"]
+visible = false
+offset_top = 720.0
+offset_right = 373.0
+offset_bottom = 751.0
+text = "True Fate Difficulty"
+alignment = 1
+icon_alignment = 1
+expand_icon = true
+
+[node name="items" type="Label" parent="debug_layer/debug_panel/vbox"]
+offset_top = 538.0
+offset_right = 373.0
+offset_bottom = 564.0
+text = "Held Item:"
+horizontal_alignment = 1
+
+[node name="items_opt" type="OptionButton" parent="debug_layer/debug_panel/vbox"]
+offset_top = 568.0
+offset_right = 373.0
+offset_bottom = 588.0
+alignment = 1
+
+[node name="ammo" type="Label" parent="debug_layer/debug_panel/vbox"]
+offset_top = 592.0
+offset_right = 373.0
+offset_bottom = 618.0
+text = "Ammo:"
+horizontal_alignment = 1
+
+[node name="ammo_in" type="SpinBox" parent="debug_layer/debug_panel/vbox"]
+offset_top = 622.0
+offset_right = 373.0
+offset_bottom = 653.0
+alignment = 1
+
+[node name="health" type="Label" parent="debug_layer/debug_panel/vbox"]
+offset_top = 657.0
+offset_right = 373.0
+offset_bottom = 683.0
+text = "Health:"
+horizontal_alignment = 1
+
+[node name="health_slider" type="HSlider" parent="debug_layer/debug_panel/vbox"]
+offset_top = 687.0
+offset_right = 373.0
+offset_bottom = 703.0
+value = 100.0
+rounded = true
+
+[node name="stam" type="Label" parent="debug_layer/debug_panel/vbox"]
+offset_top = 707.0
+offset_right = 373.0
+offset_bottom = 733.0
+text = "Stamina:"
+horizontal_alignment = 1
+
+[node name="stam_slider" type="HSlider" parent="debug_layer/debug_panel/vbox"]
+offset_top = 737.0
+offset_right = 373.0
+offset_bottom = 753.0
+value = 100.0
+rounded = true
+
+[node name="pwr" type="Label" parent="debug_layer/debug_panel/vbox"]
+offset_top = 757.0
+offset_right = 373.0
+offset_bottom = 783.0
+text = "Power:"
+horizontal_alignment = 1
+
+[node name="pwr_slider" type="HSlider" parent="debug_layer/debug_panel/vbox"]
+offset_top = 787.0
+offset_right = 373.0
+offset_bottom = 803.0
+value = 100.0
+rounded = true
+
+[node name="fov" type="Label" parent="debug_layer/debug_panel/vbox"]
+offset_top = 807.0
+offset_right = 373.0
+offset_bottom = 833.0
+text = "FOV:"
+horizontal_alignment = 1
+
+[node name="fov_slider" type="HSlider" parent="debug_layer/debug_panel/vbox"]
+offset_top = 837.0
+offset_right = 373.0
+offset_bottom = 853.0
+max_value = 200.0
+value = 55.0
+rounded = true
+
+[node name="br" type="Label" parent="debug_layer/debug_panel/vbox"]
+offset_top = 857.0
+offset_right = 373.0
+offset_bottom = 883.0
+text = "Brightness:"
+horizontal_alignment = 1
+
+[node name="br_slider" type="HSlider" parent="debug_layer/debug_panel/vbox"]
+offset_top = 887.0
+offset_right = 373.0
+offset_bottom = 903.0
+max_value = 8.0
+
+[node name="anim" type="AnimationPlayer" parent="debug_layer"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_q66n7")
+}
+
+[connection signal="pressed" from="debug_layer/debug_panel/vbox/items_opt" to="debug_layer" method="_on_items_opt_pressed"]
+[connection signal="value_changed" from="debug_layer/debug_panel/vbox/ammo_in" to="debug_layer" method="_on_ammo_in_value_changed"]
+[connection signal="value_changed" from="debug_layer/debug_panel/vbox/health_slider" to="debug_layer" method="_on_health_slider_value_changed"]
+[connection signal="value_changed" from="debug_layer/debug_panel/vbox/stam_slider" to="debug_layer" method="_on_stam_slider_value_changed"]
+[connection signal="value_changed" from="debug_layer/debug_panel/vbox/pwr_slider" to="debug_layer" method="_on_pwr_slider_value_changed"]
+[connection signal="value_changed" from="debug_layer/debug_panel/vbox/fov_slider" to="debug_layer" method="_on_fov_slider_value_changed"]
+[connection signal="value_changed" from="debug_layer/debug_panel/vbox/br_slider" to="debug_layer" method="_on_br_slider_value_changed"]

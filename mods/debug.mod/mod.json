@@ -1,0 +1,8 @@
+{
+  "mod":"Debug",
+  "pck":"debug.pck",
+  "scene":"res://mods/debug/debug.tscn",
+  "full_game":true,
+  "autoload":true,
+  "min_ver":0.3
+}

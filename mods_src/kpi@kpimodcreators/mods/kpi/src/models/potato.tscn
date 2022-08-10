@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0j3g2ca1bvpv"]
+
+[ext_resource type="ArrayMesh" uid="uid://du13rsupdg4e3" path="res://mods/kpi/src/models/potato/10201_Potato_v1-L3.obj" id="1_ax3te"]
+[ext_resource type="Texture2D" uid="uid://ck2cgf7xjmrhk" path="res://mods/kpi/src/models/potato/kyle_wrap.png" id="2_xxrn5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_25531"]
+albedo_texture = ExtResource("2_xxrn5")
+
+[node name="potato" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.2417)
+
+[node name="potato" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00906838, -0.00421479, -1.84234e-10, 0, -4.37114e-10, 0.01, -0.00421479, -0.00906838, -3.96392e-10, -0.104481, -0.0301929, 0.0712193)
+mesh = ExtResource("1_ax3te")
+surface_material_override/0 = SubResource("StandardMaterial3D_25531")

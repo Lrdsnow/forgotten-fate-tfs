@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5ei0eb7q8e7o"]
+
+[ext_resource type="Script" path="res://mods/kpi/kpi.gd" id="1_j4cpc"]
+
+[node name="kpi" type="Node3D"]
+script = ExtResource("1_j4cpc")
