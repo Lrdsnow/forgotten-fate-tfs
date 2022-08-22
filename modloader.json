@@ -1,10 +1,10 @@
 {
-  "0.2":{
+  "0.2.0":{
     "mods":{
-      "forgottenfate_debug":"0.2"
+      "forgottenfate_debug":"0.2.0"
     },
     "builds":{
-      "windows":"0.2"
+      "windows":"0.2.0"
     }
   },
   "0.3.2":{
