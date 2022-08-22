@@ -1,0 +1,32 @@
+{
+  "0.2":{
+    "mods":{
+      "forgottenfate_debug":"0.2"
+    },
+    "builds":{
+      "windows":"0.2"
+    }
+  },
+  "0.3.2":{
+    "mods":{
+      "forgottenfate_debug":"0.3.1",
+      "forgottenfate_efficiency":"0.3.1",
+      "kpimodcreators_kpi":"0.3.2"
+    },
+    "builds":{
+      "windows":"0.3.2",
+      "linux":"0.3.2"
+    }
+  },
+  "0.3.3":{
+    "mods":{
+      "forgottenfate_debug":"0.3.2",
+      "forgottenfate_efficiency":"0.3.1",
+      "kpimodcreators_kpi":"0.3.3"
+    },
+    "builds":{
+      "windows":"0.3.3",
+      "linux":"0.3.3"
+    }
+  }
+}
