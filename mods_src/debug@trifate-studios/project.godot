@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Forgotten Fate Debug Mod"
-run/main_scene="res://mods/debug/debug.tscn"
-config/features=PackedStringArray("4.0", "Vulkan Clustered")
+run/main_scene="res://mods/debug_activator/debug_activator.tscn"
+config/features=PackedStringArray("4.0")
 
 [autoload]
 
@@ -27,6 +27,6 @@ window/size/viewport_height=1440
 
 debug={
 "deadzone": 0.5,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":48,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":48,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
 ]
 }

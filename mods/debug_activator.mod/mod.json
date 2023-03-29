@@ -1,0 +1,8 @@
+{
+  "mod":"Debug Activator",
+  "pck":"debug_activator.pck",
+  "scene":"res://mods/debug_activator/debug_activator.tscn",
+  "full_game":true,
+  "autoload":true,
+  "min_ver":0.3
+}
