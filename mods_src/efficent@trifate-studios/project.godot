@@ -11,5 +11,5 @@ config_version=5
 [application]
 
 config/name="Forgotten Fate Efficiency Mode"
-config/features=PackedStringArray("4.0")
+config/features=PackedStringArray("4.1")
 config/icon="res://icon.png"
