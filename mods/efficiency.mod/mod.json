@@ -4,5 +4,5 @@
   "scene":"res://mods/efficiency/efficiency.tscn",
   "full_game":true,
   "autoload":true,
-  "min_ver":0.3
+  "min_ver":0.4
 }

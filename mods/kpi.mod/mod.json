@@ -4,6 +4,5 @@
   "scene":"res://mods/kpi/kpi.tscn",
   "full_game":true,
   "autoload":false,
-  "min_ver":0.3,
-  "min_sub_ver":2
+  "min_ver":0.4
 }
