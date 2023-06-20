@@ -10,3 +10,8 @@ As you journey through the hospital, you will encounter other survivors who can 
 But be warned, your every move is being monitored, adding an extra layer of suspense to each decision you make. As you progress, your wits and courage will be tested, leading to multiple endings, each more terrifying than the last.
 
 Will you emerge victorious and escape from the hospital, or will you succumb to its dark and twisted nature? Only time will tell in this unforgettable horror adventure.
+
+## Mods:
+- Debug Activatior: Activates Forgotten Fate Debug Menu
+- Efficency: Used to make things run better (replaced by mobile/comatibility graphics) but now it just removes the menu's background
+- KPI (Kyle Potato): Doesn't Work on v0.4.0
