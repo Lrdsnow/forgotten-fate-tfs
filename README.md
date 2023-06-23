@@ -15,3 +15,6 @@ Will you emerge victorious and escape from the hospital, or will you succumb to 
 - Debug Activatior: Activates Forgotten Fate Debug Menu
 - Efficency: Used to make things run better (replaced by mobile/comatibility graphics) but now it just removes the menu's background
 - KPI (Kyle Potato): Doesn't Work on v0.4.0
+
+## iOS:
+Copy and paste this into safari: `itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/Lrdsnow/forgotten-fate-tfs/main/iOS/forgottenfate.plist`
